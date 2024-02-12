@@ -1,18 +1,53 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+ 
+    // Or if using `src` directory:
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+			'Sarabun': ["Sarabun", "sans-serif"],
+      'Roboto': ["Roboto", "sans-serif"],
+		},
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        primary: "#FF5E41",
+				white: "#ffffff",
+        black:"#222222",
+        paragraph:"#7A7A7A",
+        skin:"#E9E9E9",
+        darkgrey:"#222222",
+        btnhover:"#FF2700",
+        defaultline:"#E9E9E9",
+			},
+      // clipPath: {
+      //   'triangle': 'polygon(100% 0, 50% 0, 100% 133px)',
+      // },
+      container: {
+				center: true,
+
+				padding: {
+					DEFAULT: "15px",
+				},
+				screens: {
+					sm: "750px",
+					md: "970px",
+					lg: "1230px",
+				},
+			},
+      backgroundImage:{
+        "service":"url(../assets/images/servicebg.png)",
+      },
+      fontSize: {
+        h1: ["118px", "113%"],
+        h2: ["64px", "120%"],
+        h3: ["20px", "120%"],
       },
     },
   },
   plugins: [],
-};
+}
