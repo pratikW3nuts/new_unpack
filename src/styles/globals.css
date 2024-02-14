@@ -24,6 +24,10 @@ body {
   font-family: 'Roboto';
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+textarea{resize: none;}
+
 iframe,
 object,
 embed {
@@ -79,7 +83,7 @@ h6 {
     clip-path: polygon(0 0, 100% 0, 100% 0, 100% 87%, 0 100%, 0 100%, 0 100%, 0% 30%);
     z-index: 1;
 }
-.banner .bgimg{    clip-path: polygon(0 0, 100% 0, 100% 0, 100% 87%, 0 100%, 0 100%, 0 100%, 0% 30%);}
+.banner .bgimg{clip-path: polygon(0 0, 100% 0, 100% 0, 100% 87%, 0 100%, 0 100%, 0 100%, 0% 30%);}
 .aboutus_wrap .detailblock p + p{@apply pt-[24px]}
 .aboutus_wrap .aboutdetail .socialrow a + a{@apply ml-[16px]}
 
@@ -100,3 +104,72 @@ h6 {
  .contentbox .detailrow .texticon:hover .icon svg path{@apply stroke-white }
  .contentbox .detailrow .texticon .icon svg path{@apply transition-all duration-300 ease-in-out}
  .contentbox .detailrow .texticon:hover .icon{@apply bg-primary}
+
+ .sliderwrap .starbox .starimg + .starimg{@apply ml-2}
+
+ 
+.testimonial_slider .swiper { @apply w-full h-full}
+.testimonial_slider .swiper-wrapper {@apply pb-[123px]}
+.testimonial_slider .swiper-slide img { @apply block w-full h-full object-cover}
+.testimonial_slider .swiper-pagination-bullets.swiper-pagination-horizontal {@apply bottom-[60px]}
+.testimonial_slider .swiper-pagination-bullet{@apply w-[14px] rounded-[10px] h-[3px] bg-[#D3D3D3]}
+.testimonial_slider .swiper-pagination-bullet-active{@apply w-[35px] bg-primary}
+
+.shipment_wrap:before {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 119px;
+  width: 100%;
+  background: #ffffff;
+  left: 0;
+  top: -50px;
+  transform: skew(0deg, -3deg);
+  z-index: 1;
+}
+.shipment_wrap:after{
+  content: '';
+  position: absolute;
+  display: block;
+  height: 156px;
+  width: 100%;
+  background: #FF5E41;
+  top: -24px;
+  left: 0;
+  -webkit-clip-path: polygon(68% 69%, 0 72%, 0 100%);
+  clip-path: polygon(54% 57%, 0 37%, 0 100%);
+  z-index: 11;
+}
+
+.newsitem + .newsitem{@apply mt-8}
+.inputrow + .inputrow{@apply mt-10}
+
+.booking_wrap::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 426px;
+  background: #222222;
+  bottom: -1px;
+  left: 0px;
+  z-index: -1;
+  clip-path: polygon(0 3%, 100% 43%, 100% 100%, 0 100%);
+}
+.booking_wrap::before{
+  content: '';
+  position: absolute;
+  display: block;
+  height: 200px;
+  width: 50%;
+  background: #FF5E41;
+  bottom: 33%;
+  right: 0;
+  -webkit-clip-path: polygon(0 64%, 100% 36%, 100% 97%, 0 64%);
+  clip-path: polygon(0 87%, 100% 36%, 100% 97%, 0 64%);
+  z-index: -1;
+}
+
+.footer_wrap .metablock .icontxt + .icontxt{@apply pt-[23px]}
+.footer_wrap .discover .menubox ul li + li{@apply mt-6}
+
+.ftrsocialrow ul li + li{@apply ml-[22px]}

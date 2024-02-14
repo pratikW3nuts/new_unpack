@@ -1,9 +1,9 @@
 import Image from "next/image";
 import bestman from "@/assets/images/bestman.png";
 // import proservice from "@/assets/images/proservice.svg";
-import emeservice from "@/assets/images/emeservice.svg";
-import ontime from "@/assets/images/ontime.svg";
-import flatrate from "@/assets/images/flatrate.svg";
+// import emeservice from "@/assets/images/emeservice.svg";
+// import ontime from "@/assets/images/ontime.svg";
+// import flatrate from "@/assets/images/flatrate.svg";
 
 const Whyus = () =>{
     return(

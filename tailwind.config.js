@@ -18,7 +18,8 @@ export default {
         primary: "#FF5E41",
 				white: "#ffffff",
         black:"#222222",
-        paragraph:"#7A7A7A",
+        paragraph:"#A7A7A7",
+        shadowgrey:"#7A7A7A",
         skin:"#E9E9E9",
         darkgrey:"#222222",
         btnhover:"#FF2700",
@@ -50,4 +51,5 @@ export default {
     },
   },
   plugins: [],
+  
 }

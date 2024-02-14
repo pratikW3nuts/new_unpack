@@ -16,7 +16,7 @@ const Banner = ()=>{
                             <div className="leftbox">
                                 <div className="leftdetail max-w-[854px]">
                                     <div className="linetext relative after:absolute after:bg-white after:w-[86px] after:h-[1px] after:top-[16px] after:left-0 ">
-                                    <p className="uppercase text-white text-[24px] tracking-[0.23em] pb-[16px] ml-[110px]">fast & secure move</p>
+                                        <p className="uppercase text-white text-[24px] tracking-[0.23em] pb-[16px] ml-[110px]">fast & secure move</p>
                                     </div>
                                     <h1 className="text-h1 text-white">Moving<br/>Was Never<br/><span className="text-primary">So Easy</span></h1>
                                     <div className="get_started flex items-center pt-[60px]">
